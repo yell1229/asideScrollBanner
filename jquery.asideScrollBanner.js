@@ -1,6 +1,7 @@
 (function(global,$){
     //scrollBanner
     $.fn.asideScrollBanner = $.fn.asideScrollBanner || function(speed){ 
+        speed=speed||1000;
         var $this = this;
         var currentPosition = parseInt($(this).css("top"));
         $(window).scroll(function(el){
